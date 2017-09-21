@@ -13,7 +13,6 @@ import { Angular4EntityModule } from './entities/entity.module';
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 
 import {
@@ -36,7 +35,6 @@ import {
         Angular4AdminModule,
         Angular4AccountModule,
         Angular4EntityModule,
-        DashboardComponent
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
