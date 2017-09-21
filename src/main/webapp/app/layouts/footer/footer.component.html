@@ -1,3 +1,35 @@
 <div class="footer">
     <p>This is your footer</p>
+
+
+
+    <md-toolbar color="primary">
+        <span>App Name</span>
+        <span class="example-spacer"></span>
+        <button md-button [mdMenuTriggerFor]="appMenu"><md-icon>menu</md-icon> Menu</button>
+    </md-toolbar>
+
+    <md-menu #appMenu="mdMenu">
+        <button md-menu-item> Settings </button>
+        <button md-menu-item> Contact </button>
+    </md-menu>
+
+
+    <md-sidenav-container class="example-container">
+        <md-sidenav #sidenav class="example-sidenav">
+            Jolly good!
+            <div class="my-content">
+                <i class="material-icons md-48">face</i>
+                <i class="material-icons md-24 orange600">face</i>
+            </div>
+        </md-sidenav>
+
+        <div class="example-sidenav-content">
+            <button type="button" md-button (click)="sidenav.open()">
+                Open sidenav
+            </button>
+        </div>
+
+    </md-sidenav-container>
+
 </div>

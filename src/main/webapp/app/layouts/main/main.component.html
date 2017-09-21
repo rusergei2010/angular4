@@ -2,10 +2,36 @@
 <div>
     <router-outlet name="navbar"></router-outlet>
 </div>
+
+
+
+
 <div class="container-fluid">
-    <div class="card jh-card">
-        <router-outlet></router-outlet>
-        <router-outlet name="popup"></router-outlet>
-    </div>
-    <jhi-footer></jhi-footer>
+    <!--<div class="card jh-card">-->
+        <!--<router-outlet></router-outlet>-->
+        <!--<router-outlet name="popup"></router-outlet>-->
+    <!--</div>-->
+    <!--<jhi-footer></jhi-footer>-->
+
+
+    <!--<div class="card jh-card">-->
+    <!--<router-outlet></router-outlet>-->
+
+    <md-sidenav-container class="example-container">
+        <md-sidenav #sidenav class="example-sidenav">
+            Jolly good!
+            <div class="my-content">
+                <i class="material-icons md-48">face</i>
+                <i class="material-icons md-24 orange600">face</i>
+            </div>
+        </md-sidenav>
+
+        <div class="example-sidenav-content">
+            <button type="button" md-button (click)="sidenav.open()">
+                Open sidenav
+            </button>
+        </div>
+
+    </md-sidenav-container>
+
 </div>
