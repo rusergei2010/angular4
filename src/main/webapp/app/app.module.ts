@@ -1,22 +1,18 @@
 import './vendor.ts';
 
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {Ng2Webstorage} from 'ng2-webstorage';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { Ng2Webstorage } from 'ng2-webstorage';
 
-import {Angular4SharedModule, UserRouteAccessService} from './shared';
-import {Angular4HomeModule} from './home/home.module';
-import {Angular4AdminModule} from './admin/admin.module';
-import {Angular4AccountModule} from './account/account.module';
-import {Angular4EntityModule} from './entities/entity.module';
+import { Angular4SharedModule, UserRouteAccessService } from './shared';
+import { Angular4HomeModule } from './home/home.module';
+import { Angular4AdminModule } from './admin/admin.module';
+import { Angular4AccountModule } from './account/account.module';
+import { Angular4EntityModule } from './entities/entity.module';
 
-import {customHttpProvider} from './blocks/interceptor/http.provider';
-import {PaginationConfig} from './blocks/config/uib-pagination.config';
+import { customHttpProvider } from './blocks/interceptor/http.provider';
+import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
-import {MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule, MdCheckboxModule, MdSidenavModule} from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
-import 'hammerjs';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 
 import {
@@ -32,22 +28,14 @@ import {
 @NgModule({
     imports: [
         BrowserModule,
-        BrowserAnimationsModule,
         LayoutRoutingModule,
-        Ng2Webstorage.forRoot({prefix: 'jhi', separator: '-'}),
+        Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
         Angular4SharedModule,
         Angular4HomeModule,
         Angular4AdminModule,
         Angular4AccountModule,
         Angular4EntityModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
-        MdButtonModule, // Add material components to imports array
-        MdCardModule,
-        MdMenuModule,
-        MdToolbarModule,
-        MdIconModule,
-        MdCheckboxModule,
-        MdSidenavModule
     ],
     declarations: [
         JhiMainComponent,
@@ -62,7 +50,6 @@ import {
         PaginationConfig,
         UserRouteAccessService
     ],
-    bootstrap: [JhiMainComponent]
+    bootstrap: [ JhiMainComponent ]
 })
-export class Angular4AppModule {
-}
+export class Angular4AppModule {}
