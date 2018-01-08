@@ -1,0 +1,25 @@
+<p>
+    sergey-component works!
+</p>
+
+<form>
+    <h3 class="header">Add a Link</h3>
+
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input id="title" class="form-control" #newTitle>
+    </div>
+
+    <div class="form-group">
+        <label for="link">Link:</label>
+        <input id="link" class="form-control" #newLink>
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="addArticle(newTitle, newLink)">Submit</button>
+
+    <div>
+        <div></div>
+        <jhi-article *ngFor="let article of sorted()" [article]="article">
+        </jhi-article>
+    </div>
+</form>

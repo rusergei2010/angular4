@@ -24,6 +24,8 @@ import {
     PageRibbonComponent,
     ErrorComponent
 } from './layouts';
+import { SergeyComponentComponent } from './sergey-component/sergey-component.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
     imports: [
@@ -34,7 +36,7 @@ import {
         Angular4HomeModule,
         Angular4AdminModule,
         Angular4AccountModule,
-        Angular4EntityModule,
+        Angular4EntityModule
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
@@ -42,7 +44,9 @@ import {
         NavbarComponent,
         ErrorComponent,
         PageRibbonComponent,
-        FooterComponent
+        FooterComponent,
+        SergeyComponentComponent,
+        ArticleComponent
     ],
     providers: [
         ProfileService,

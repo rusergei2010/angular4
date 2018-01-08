@@ -1,0 +1,33 @@
+<p>
+
+    <br/>
+
+        <div class="h4">{{article.domain()}}</div>
+
+    <br/>
+</p>
+<p>
+<div for="title" style="padding-left: 20px">
+    Title:
+    <span id="title">{{this.article.title}}</span>
+</div>
+
+<div for="link" style="padding-left: 20px; padding-right: 20px">
+    Link:
+    <span>{{article.link}}</span>
+</div>
+
+<button type="button" class="btn btn-outline-info">
+    Messages <span class="badge badge-warning text-lg-center">{{article.votes}}</span>
+</button>
+
+<a href="#" (click)="voteDown()">
+    Votedown
+</a>
+
+<a href="#" (click)="voteUp()">
+    Voteup
+</a>
+
+
+</p>
